@@ -3,7 +3,7 @@ name: Build and Push Backend Docker Image
 on:
   push:
     branches:
-      - dev
+      - dev # trigger workflow when there is change in dev branch
     paths:
       - 'backend/**'
 
