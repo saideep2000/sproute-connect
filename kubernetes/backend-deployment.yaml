@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: saideepsamineni/messaging-backend-image:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_REDIS_HOST
+          value: "localhost"
+        - name: SPRING_REDIS_PORT
+          value: "6379"
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:mysql://localhost:3306/sproutconnect"
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "root"
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: "admin"
+      - name: redis
+        image: redis:latest
+        ports:
+        - containerPort: 6379
+      - name: mysql
+        image: mysql:5.7
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "admin"
+        - name: MYSQL_DATABASE
+          value: "sproutconnect"
