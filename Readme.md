@@ -1,5 +1,71 @@
-This project is created from 
+# Sproute Connect
 
+Sproute Connect is a modern messaging application designed to provide real-time, seamless communication between users. Built with a robust and scalable architecture, Sproute Connect leverages the power of React, Spring Boot, Kafka, Redis, Elasticsearch, and MySQL to deliver an efficient and responsive user experience.
+
+## Features
+
+- **Real-Time Messaging**: Instantly send and receive messages with WebSocket support.
+- **User Authentication**: Secure user authentication with JWT tokens.
+- **Message Search**: Powerful search functionality using Elasticsearch to find messages and users quickly.
+- **Scalability**: High-throughput message processing with Kafka and Redis for caching and real-time message queues.
+- **User Management**: Comprehensive user profiles with persistent storage in MySQL.
+- **Modern UI**: Responsive and user-friendly interface built with React.
+
+## Tech Stack
+
+- **Frontend**: React
+- **Backend**: Spring Boot
+- **Messaging**: Kafka
+- **Cache**: Redis
+- **Search**: Elasticsearch
+- **Database**: MySQL
+
+## Architecture
+
+![Architecture Diagram](assets/Architecture.png)
+*Architecture Diagram*
+
+The architecture of Sproute Connect ensures scalability, performance, and reliability:
+
+### React Frontend:
+- UI Components for interacting with the application.
+- WebSockets for real-time messaging.
+- REST API calls for user authentication and message handling.
+
+### Spring Boot Backend:
+- REST API Endpoints for various operations.
+- WebSocket Server for real-time communication.
+- Service Layer to handle business logic.
+- Integration with Elasticsearch for search functionalities.
+- Kafka Producer and Consumer for message processing.
+- Redis Client for caching and real-time queues.
+- MySQL for persistent storage.
+
+### Kafka:
+- Manages message streams for high-throughput processing.
+
+### Elasticsearch:
+- Provides robust search capabilities for messages and user profiles.
+
+### Redis:
+- Used for caching frequently accessed data and managing real-time message queues.
+
+### MySQL:
+- Stores user data and message history for long-term persistence.
+
+## Automation
+![CI/CD Pipeline](assets/CI_CD.png)
+*CI/CD Pipeline*
+
+## Getting Started
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/saideep2000/sproute-connect
+
+   cd sproute-connect
 <!-- my-project/
 ├── backend/
 │   ├── src/main/java/com/example/demo/
