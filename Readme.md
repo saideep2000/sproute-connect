@@ -25,6 +25,9 @@ Sproute Connect is a modern messaging application designed to provide real-time,
 
 ## Architecture
 
+![Flow Diagram](assets/Flow.png)
+*Flow Diagram*
+
 The architecture of Sproute Connect ensures scalability, performance, and reliability:
 
 ### React Frontend:
