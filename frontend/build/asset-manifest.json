@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sprout/static/css/main.e6c13ad2.css",
+    "main.js": "/sprout/static/js/main.6c034535.js",
+    "index.html": "/sprout/index.html",
+    "main.e6c13ad2.css.map": "/sprout/static/css/main.e6c13ad2.css.map",
+    "main.6c034535.js.map": "/sprout/static/js/main.6c034535.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6c034535.js"
+  ]
+}
