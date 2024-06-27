@@ -2,6 +2,9 @@
 
 Sproute Connect is a modern messaging application designed to provide real-time, seamless communication between users. Built with a robust and scalable architecture, Sproute Connect leverages the power of React, Spring Boot, Kafka, Redis, Elasticsearch, and MySQL to deliver an efficient and responsive user experience.
 
+![Architecture Diagram](assets/Architecture.png)
+*Architecture Diagram*
+
 ## Features
 
 - **Real-Time Messaging**: Instantly send and receive messages with WebSocket support.
@@ -21,9 +24,6 @@ Sproute Connect is a modern messaging application designed to provide real-time,
 - **Database**: MySQL
 
 ## Architecture
-
-![Architecture Diagram](assets/Architecture.png)
-*Architecture Diagram*
 
 The architecture of Sproute Connect ensures scalability, performance, and reliability:
 
