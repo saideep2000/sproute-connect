@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-deployment
+  name: sproute-connect-frontend-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: sproute-connect-frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: sproute-connect-frontend
     spec:
       containers:
       - name: frontend
-        image: saideepsamineni/messaging-frontend-image:latest
+        image: saideepsamineni/sproute-connect:frontend-image
         imagePullPolicy: Always
         ports:
         - containerPort: 80

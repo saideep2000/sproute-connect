@@ -24,6 +24,6 @@ public class MessageController {
 
   @GetMapping("/hi")
   public String printMessage() {
-    return "hi";
+    return "hello";
   }
 }

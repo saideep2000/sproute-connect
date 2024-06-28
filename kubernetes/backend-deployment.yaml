@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-deployment
+  name: sproute-connect-backend-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend
+      app: sproute-connect-backend
   template:
     metadata:
       labels:
-        app: backend
+        app: sproute-connect-backend
     spec:
       containers:
       - name: backend
-        image: saideepsamineni/messaging-backend-image:latest
+        image: saideepsamineni/sproute-connect:backend-image
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
