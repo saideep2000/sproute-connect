@@ -1,9 +1,5 @@
 # Sproute Connect
 
-![Build Status](https://img.shields.io/travis/saideep2000/sproute-connect.svg)
-![Documentation Status](https://readthedocs.org/projects/sproute-connect/badge/?version=latest)
-![CodeFactor](https://www.codefactor.io/repository/github/saideep2000/sproute-connect/badge)
-
 Sproute Connect is a modern messaging application designed to provide real-time, seamless communication between users. Built with a robust and scalable architecture, Sproute Connect leverages the power of React, Spring Boot, Kafka, Redis, Elasticsearch, and MySQL to deliver an efficient and responsive user experience.
 
 ![Architecture Diagram](assets/Architecture.png)
