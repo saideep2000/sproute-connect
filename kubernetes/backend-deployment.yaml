@@ -29,6 +29,10 @@ spec:
           value: "root"
         - name: SPRING_DATASOURCE_PASSWORD
           value: "admin"
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "kafka:9092"
+        - name: SPRING_KAFKA_CONSUMER_GROUP_ID
+          value: "message-consumers"
       - name: redis
         image: redis:latest
         ports:

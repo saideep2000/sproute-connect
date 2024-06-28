@@ -341,7 +341,7 @@ java -jar target/*.jar
 
 
 -------------------------------------------------------
-
+tree -L 2
 
 minikube start --vm-driver=docker
 
@@ -371,7 +371,21 @@ kubectl delete pods --all --all-namespaces
 minikube stop
 
 
+-------------------------------------------------------
 
+### Features:
+
+Redis:
+1. Store recent messages.
+
+
+Apache Kafka:
+1. Real-time Notifications
+2. Group Chat
+3. Message Analytics
+4. Chat History Peristence
+5. Read Receipts
+6. Offline Message Queuing
 
 
 
