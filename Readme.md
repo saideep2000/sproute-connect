@@ -1,5 +1,10 @@
 # Sproute Connect
 
+![Build Status](https://img.shields.io/travis/saideep2000/sproute-connect.svg)
+![Documentation Status](https://readthedocs.org/projects/sproute-connect/badge/?version=latest)
+![Downloads](https://img.shields.io/npm/dt/sproute-connect.svg)
+![CodeFactor](https://www.codefactor.io/repository/github/saideep2000/sproute-connect/badge)
+
 Sproute Connect is a modern messaging application designed to provide real-time, seamless communication between users. Built with a robust and scalable architecture, Sproute Connect leverages the power of React, Spring Boot, Kafka, Redis, Elasticsearch, and MySQL to deliver an efficient and responsive user experience.
 
 ![Architecture Diagram](assets/Architecture.png)
@@ -369,8 +374,6 @@ kubectl rollout restart deployment/ingress-nginx-controller -n ingress-nginx
 kubectl delete pods --all --all-namespaces
 
 minikube stop
-
-sudo systemctl stop docker
 
 
 
